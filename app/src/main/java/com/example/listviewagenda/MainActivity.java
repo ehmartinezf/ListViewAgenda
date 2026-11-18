@@ -2,10 +2,14 @@ package com.example.listviewagenda;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -48,5 +52,33 @@ public class MainActivity extends Activity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public class AdaptadorContactes extends ArrayAdapter {
+        Activity context;
+
+        public AdaptadorContactes(Activity context) {
+            super(context, R.layout.listitem_contacte, datosE);
+            this.context = (Activity) context;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            // return super.getView(position, convertView, parent);
+            Log.i("Niko", "1");
+            // Inflem el Lauoyt
+            LayoutInflater inflater = context.getLayoutInflater();
+            // Sobre el layout crear (inflat) dupliquem el layour creat amb els objectes, view personals.
+            View item = inflater.inflate(R.layout.listitem_titular, null);
+            // OJOOOO!!!!! hemos de hacer el findViewById del item que tenemos inflado.
+            TextView lblNom = (TextView) item.findViewById(R.id.lblNom);
+
+            lblNom.setText(datosE[position].getNom().toString());
+            TextView lblCognom = (TextView) item.findViewById(R.id.lblCognom);
+            // Log.i("Niko","3->"+datosE[position].getSubtitulo().toString() );
+            lblCognom.setText(datosE[position].getCognom().toString());
+            // Log.i("Niko","4");
+            return (item);
+        }
     }
 }

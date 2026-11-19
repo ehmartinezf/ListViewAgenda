@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ContacteActivity">
+
+    <TextView
+        android:id="@+id/lblTitol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etNom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nom"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etCognom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/cognom"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etAdreca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/adreca"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/etTelefon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/telefon"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etDataNaixement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/data_naixement"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/etEmpresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/empresa"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etNotes"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:hint="@string/notes"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/cancelar" />
+
+        <Button
+            android:id="@+id/btnAcceptar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="@string/acceptar" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -13,6 +13,7 @@
         android:theme="@style/Theme.ListViewAgenda">
         <activity
             android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -21,6 +22,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ContacteActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

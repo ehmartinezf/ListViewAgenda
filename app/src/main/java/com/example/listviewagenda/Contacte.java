@@ -1,6 +1,8 @@
 package com.example.listviewagenda;
 
-public class Contacte {
+import java.io.Serializable;
+
+public class Contacte implements Serializable {
 
     private int id;
     private String nom;

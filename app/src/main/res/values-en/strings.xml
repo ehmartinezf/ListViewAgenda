@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ListViewAgenda</string>
+    <string name="titol_agenda">Contacts</string>
+    <string name="afegir_contacte">Add contact</string>
+    <string name="nom">First name</string>
+    <string name="cognom">Last name</string>
+    <string name="adreca">Address</string>
+    <string name="telefon">Phone</string>
+    <string name="email">Email</string>
+    <string name="data_naixement">Birth date (dd/mm/yyyy)</string>
+    <string name="empresa">Company</string>
+    <string name="notes">Notes</string>
+    <string name="acceptar">Accept</string>
+    <string name="cancelar">Cancel</string>
+    <string name="titol_afegir">New contact</string>
+    <string name="titol_modificar">Edit contact</string>
+    <string name="titol_esborrar">Delete contact</string>
+    <string name="titol_veure">Contact details</string>
+    <string name="error_nom">Enter the name</string>
+    <string name="descr_editar">Edit</string>
+    <string name="descr_esborrar">Delete</string>
+    <string name="descr_trucar">Call</string>
+    <string name="descr_correu">Send email</string>
+</resources>
